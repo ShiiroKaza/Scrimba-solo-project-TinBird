@@ -1,0 +1,215 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    background-color: #fefefe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#phone-container {
+    background: rgb(41, 52, 62);
+    background: linear-gradient(180deg, rgba(41, 52, 62,1) 0%, rgb(54, 54, 49) 35%) padding-box,
+    linear-gradient(to right, #989797, #c0c0c0) border-box;
+    border-radius:30px;
+    border: 5px solid transparent;
+    margin: 20px;
+    max-width: 558px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#phone-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 32%;
+    height: 10px;
+    background-color: #353c49;
+    border-radius: 0 0 4px 4px;
+}
+
+h4 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 0.25em;
+}
+
+h4 span{
+    font-size: 1rem;
+}
+
+p {
+    font-size: 0.775rem;
+    font-weight: 200;
+}
+
+.profile, .chat {
+    /* max-height: 45px; */
+    font-size: 2rem;
+    padding: 10px 0 10px 0;
+    margin: 0 auto;
+    display: block;
+    color: #605e6a;
+}
+
+.logo{
+    max-height: 16px;
+}
+
+.logo:nth-child(2){
+    margin-left: .5em;
+    right: 90px;
+    padding-right: 1em;
+}
+
+.profile, .chat{
+    text-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+}
+
+.logo-container{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin: 0;
+    padding: .20em;
+    background-color: #353c49;
+    border-radius: 16px;
+}
+
+.btn-container{
+    border-radius: 16px;
+    background-color: rgba(41, 52, 62,1);
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+    padding: .25em .5em;
+}
+
+header {
+    margin: 0 auto;
+    margin: 15px 0 10px 0;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    width:95%;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0px 8px 15px #262626;
+}
+
+img {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+#card {
+    width: 100%;
+    position: relative;
+}
+
+.bird-img {
+    height: 462px;
+    width: 340px;
+    border-radius: 15px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.feature-suggestion, .actions {
+    display: flex;
+    justify-content: center;
+}
+
+.bird-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    margin:0 auto;
+    border-radius: 15px;
+
+    position: relative;
+    left: 400px;
+    animation: slide 0.5s forwards;
+    z-index: 0;
+}
+
+ .bird-info {
+    position: absolute;
+    bottom: 0;
+    left: 13px;
+    bottom: 7px;
+    color: white;
+    margin-bottom: 5px;
+    border-radius: 15px;
+}
+
+.actions {
+    gap: 50px;
+}
+
+button {
+    border: none;
+}
+
+#like, #nope {
+    display: block;
+    width: 40%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    /* padding: 30px; */
+    margin-top: 3px;
+}
+
+#reject-button, #accept-button {
+    cursor: pointer;
+    max-height: 20%;
+    border-radius: 50%;
+    margin: 5px 0 20px 0;
+    padding: 12px;
+    background-color: #474550;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
+}
+
+#accept-button:hover {
+    background: #DBFFF4;
+}
+
+#reject-button:hover {
+    background: #FFE7EF;
+}
+
+.icon-btn {
+    width: 1rem;
+}
+
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% {
+        left: 0;
+        animation-delay: 0.2s;
+     }
+}
