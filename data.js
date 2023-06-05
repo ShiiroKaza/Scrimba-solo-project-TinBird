@@ -24,8 +24,8 @@ const birdsData = [
         hasBeenLiked: false
     },
     {
-        name: "Hawky",
-        avatar: "images/bird-hawky.jpg",
+        name: "Falcon",
+        avatar: "images/bird-falcon.jpg",
         age: 18,
         bio: "Enjoys stargazing at night ✨",
         hasBeenSwiped: false,

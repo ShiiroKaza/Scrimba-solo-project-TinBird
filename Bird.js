@@ -1,13 +1,17 @@
 class Bird {
     constructor(data) {
         Object.assign(this, data)
-    }
-    
-    setMatchStatus() {
-        this.hasBeenLiked = false
-        this.hasBeenSwiped = true;
+
     }
 
+    isLiked(){
+        this.hasBeenLiked = true
+    }
+
+    isSwiped(){
+        this.hasBeenSwiped = true;
+    }
+    
     getBirdHtml() {
         const { name, avatar, age, bio } = this
         return `
