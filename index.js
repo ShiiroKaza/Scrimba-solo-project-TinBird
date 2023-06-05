@@ -11,7 +11,6 @@ document.getElementById("reject-button").addEventListener('click', no)
 
 render()
 
-
 function render() {
     document.getElementById('card').innerHTML = currentBird.getBirdHtml()
 }
