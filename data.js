@@ -1,7 +1,7 @@
 const birdsData = [
     {
         name: "Rocky",
-        avatar: "/static/images/bird-rocky.jpg",
+        avatar: "\static\images/bird-rocky.jpg",
         age: 43,
         bio: "Yup, that's my owner. U can meet her if you want, :)",
         hasBeenSwiped: false,
