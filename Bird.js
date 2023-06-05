@@ -30,11 +30,11 @@ class Bird {
     }
 
         yes() {
-            return `<img id="like" src="/images/badge-like_001.png" alt="badge-like">`
+            return `<img id="like" src="/static/images/badge-like_001.png" alt="badge-like">`
         }
 
         no() {
-            return `<img id="nope" src="/images/badge-nope_001.png" alt="badge-nope">`
+            return `<img id="nope" src="/static/images/badge-nope_001.png" alt="badge-nope">`
         }
 }
 
